@@ -1,6 +1,5 @@
 package exercises;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -9,7 +8,6 @@ public class Jankenpon {
         int userChoice, computerChoice;
         String userTool = "", computerTool = "";
         
-        DecimalFormat twoPointDecimal = new DecimalFormat("#0.00");
         Scanner userInput = new Scanner(System.in);
         
         System.out.println("------------Jankenpon------------");

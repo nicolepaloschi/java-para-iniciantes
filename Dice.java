@@ -10,7 +10,7 @@ public class Dice {
         int rolledValue = random.nextInt(1, 7);
         System.out.println("\n-----O valor sorteado foi " + rolledValue + "-----");
     }
-
+    
     public boolean rollAgain() {
         System.out.print("\nDeseja jogar novamente [S|N]? ");
         String userResponse = userInput.next();
@@ -20,9 +20,9 @@ public class Dice {
             System.out.println("\n-----------Saindo...------------\n");
             return false;
         }
-
+        
     }
-
+    
     public static void main(String[] args) {
         Dice dice = new Dice();
         boolean playAgain = true;
@@ -32,5 +32,6 @@ public class Dice {
             dice.rollDice();
             playAgain = dice.rollAgain();
         }
+        dice.userInput.close();
     }
 }
